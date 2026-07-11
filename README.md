@@ -1,11 +1,18 @@
 # Hi there, I'm Charan Kumar Reddy! 👋
-**Software Engineer | AI & ML Developerv | Data Engineer | Distributed Systems Builder**
+**Software Engineer | AI & ML Developer | Distributed Systems Builder**
 
 I am a Systems and Machine Learning engineer passionate about architecting high-throughput, low-latency backends, optimizing databases, and deploying predictive ML pipelines—with a strong focus on **Fintech**, **Scalable Web Infrastructures**, and **Data Systems**.
 
 ---
 
 ### 🚀 Technical Expertise
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 
 - **Backend & Systems**: Python, FastAPI, SQLAlchemy, Redis (Caching & Rate Limiting), PostgreSQL, Docker, Docker Compose
 - **AI/ML & Data Science**: PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, Predictive Modeling
@@ -23,9 +30,9 @@ I am a Systems and Machine Learning engineer passionate about architecting high-
 - **Security**: Guarded with a custom Sliding Window Rate Limiter using Redis Sorted Sets (`ZSET`).
 - **UI/UX**: Rendered a premium dark glassmorphic dashboard showcasing real-time analytics with Chart.js.
 - **Deployment**: Configured multi-service automated Render Blueprint orchestrations.
-- 🟢 **Live Link**: [https://octoscale-web.onrender.com](https://octoscale-web.onrender.com)
+- 🟢 **Live Demo**: [https://octoscale-web.onrender.com](https://octoscale-web.onrender.com)
 
-#### 🤖 Smart Loan Recovery System with Machine Learning
+#### 🤖 [Smart Loan Recovery System with Machine Learning](https://github.com/Charanloyal/Smart-Loan-Recovery-System-with-Machine-Learning-)
 - **Focus**: Fintech / Credit Risk Analytics
 - **Summary**: Developed an AI-driven credit risk assessment and loan recovery prediction model to identify high-risk borrowers and optimize collection strategies.
 - **Tech Stack**: Python, Scikit-Learn, Pandas, XGBoost, Matplotlib
@@ -43,6 +50,6 @@ I am a Systems and Machine Learning engineer passionate about architecting high-
 
 ### 🤝 Connect with me
 
-- 💼 **LinkedIn**: [https://www.linkedin.com/in/b-charan-kumar-reddy-132a36292/) *(Replace this with your real link)*
+- 💼 **LinkedIn**: [linkedin.com/in/charankumarreddy](https://linkedin.com/in/charankumarreddy) *(Update this link to your actual LinkedIn URL)*
 - ✉️ **Email**: charankumarreddy2028@gmail.com
-- 📍 **Location**: Bengaluru,Chennai,Hyderabad,India
+- 📍 **Location**: Hyderabad,Bengaluru,Chennai,India
