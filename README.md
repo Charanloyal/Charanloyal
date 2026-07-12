@@ -32,10 +32,12 @@ I am a Systems and Machine Learning engineer passionate about architecting high-
 - **Deployment**: Configured multi-service automated Render Blueprint orchestrations.
 - 🟢 **Live Demo**: [https://octoscale-web.onrender.com](https://octoscale-web.onrender.com)
 
-#### 🤖 [Smart Loan Recovery System with Machine Learning](https://github.com/Charanloyal/Smart-Loan-Recovery-System-with-Machine-Learning-)
-- **Focus**: Fintech / Credit Risk Analytics
-- **Summary**: Developed an AI-driven credit risk assessment and loan recovery prediction model to identify high-risk borrowers and optimize collection strategies.
-- **Tech Stack**: Python, Scikit-Learn, Pandas, XGBoost, Matplotlib
+#### 🤖 [SmartRecovery: Dual-Stage Credit Risk & Recovery Engine](https://github.com/Charanloyal/Smart-Loan-Recovery-System-with-Machine-Learning-)
+- **Tech Stack**: FastAPI, XGBoost, Scikit-Learn, Joblib, Docker Compose, Pytest, Chart.js
+- **Model Pipeline**: Engineered a dual-stage ML pipeline: Stage 1 classifies applicant default risk (F1: 88.73%); Stage 2 estimates continuous asset recovery rates (R²: 0.6813%).
+- **Optimization**: Configured automated data generation and pipeline training to execute during the Docker build phase, packaging serialized models directly into the web image for zero-cold-start inference.
+- **UI/UX**: Styled a premium Black & Gold glassmorphic dashboard showcasing real-time calculators and interactive Chart.js evaluation panels.
+- 🟢 **Live Demo**: [https://smart-loan-recovery-6ou2.onrender.com/](https://smart-loan-recovery-6ou2.onrender.com/)
 
 ---
 
