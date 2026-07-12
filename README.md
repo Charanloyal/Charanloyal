@@ -44,6 +44,7 @@ I am a Systems and Machine Learning engineer passionate about architecting high-
 - **Engine Loops**: Built a dual-agent execution pipeline (Synthesis + Critique Agents) cooperating over a Multi-Hop RAG document retriever to generate, evaluate, and refine Python code.
 - **Latency Optimization**: Designed a write-through query caching layer mapping SHA-256 hashes, dropping repeat generation latency to **sub-2s** (`0.04s`).
 - **UI/UX**: Custom-designed a dark Glassmorphic Console dashboard with real-time SSE token streaming outputs and an IDE-style code viewer.
+- 🟢 **Live Demo**: [https://multi-agent-llm-code-generator.onrender.com](https://multi-agent-llm-code-generator.onrender.com)
 
 ---
 
