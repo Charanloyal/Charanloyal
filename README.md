@@ -39,6 +39,12 @@ I am a Systems and Machine Learning engineer passionate about architecting high-
 - **UI/UX**: Styled a premium Black & Gold glassmorphic dashboard showcasing real-time calculators and interactive Chart.js evaluation panels.
 - 🟢 **Live Demo**: [https://smart-loan-recovery-6ou2.onrender.com/](https://smart-loan-recovery-6ou2.onrender.com/)
 
+#### 💻 [AgentCodex: Multi-Agent LLM Code Synthesizer](https://github.com/Charanloyal/multi-agent-llm-code-generator)
+- **Tech Stack**: FastAPI, TF-IDF, Asyncio, Docker Compose, Pytest-Asyncio, SSE (Server-Sent Events)
+- **Engine Loops**: Built a dual-agent execution pipeline (Synthesis + Critique Agents) cooperating over a Multi-Hop RAG document retriever to generate, evaluate, and refine Python code.
+- **Latency Optimization**: Designed a write-through query caching layer mapping SHA-256 hashes, dropping repeat generation latency to **sub-2s** (`0.04s`).
+- **UI/UX**: Custom-designed a dark Glassmorphic Console dashboard with real-time SSE token streaming outputs and an IDE-style code viewer.
+
 ---
 
 ### 📊 GitHub Observability
