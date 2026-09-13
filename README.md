@@ -1,4 +1,4 @@
-# Hi there, I'm Charan Kumar Reddy! 👋
+# Hi there,I'm Charan Kumar Reddy!!! 👋
 **Software Engineer | AI & ML Developer | Data Engineer | Distributed Systems Builder**
 
 I am a Systems and Machine Learning engineer passionate about architecting high-throughput, low-latency backends, optimizing databases and deploying predictive ML pipelines—with a strong focus on **Fintech**, **Scalable Web Infrastructures** and **Data Systems**.
@@ -17,7 +17,7 @@ I am a Systems and Machine Learning engineer passionate about architecting high-
 - **Backend & Systems**: Python, FastAPI, SQLAlchemy, Redis (Caching & Rate Limiting), PostgreSQL, Docker, Docker Compose
 - **AI/ML & Data Science**: PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, Predictive Modeling
 - **Databases & Analytics**: PostgreSQL, Redis, SQL, Dataform, BigQuery, Database Clustering
-- **Languages**: Python, C++, TypeScript, JavaScript, SQL, HTML/CSS
+- **Languages**: Python, C#, TypeScript, JavaScript, SQL, HTML/CSS
 - **Tooling & Cloud**: Git/GitHub, Docker, Linux, CI/CD pipelines, Render, Railway
 
 ---
