@@ -59,6 +59,6 @@ I am a Systems and Machine Learning engineer passionate about architecting high-
 
 ### 🤝 Connect with me
 
-- 💼 **LinkedIn**: [linkedin.com/in/charankumarreddy](https://linkedin.com/in/charankumarreddy) 
+- 💼 **LinkedIn**: [linkedin.com/in/charankumarreddy](https://www.linkedin.com/in/b-charan-kumar-reddy/) 
 - ✉️ **Email**: charankumarreddy2028@gmail.com
-- 📍 **Location**: Hyderabad,Bengaluru,Chennai,India
+- 📍 **Location**: Hyderabad,Bengaluru,India
