@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Charan Loyal 👋
+# Hi, I'm Charan Kumar Reddy👋
 ### **Distributed Systems & AI Infrastructure Engineer | SDE / FDE / AI-Infra**
 
 *Specializing in High-Throughput Microservices, Consensus Protocols, LLM Serving Gateways & Cloud Infrastructure*
