@@ -100,4 +100,4 @@ I am a **Systems Infrastructure & Software Development Engineer (SDE)** passiona
 
 - 💼 **LinkedIn**: [Connect on LinkedIn](https://linkedin.com/in/b-charan-kumar-reddy)
 - 💻 **GitHub**: [github.com/Charanloyal](https://github.com/Charanloyal)
-- 📧 **Email**: [charanloyal@gmail.com](mailto:charan.workmaill@gmail.com)
+- 📧 **Email**: [charan.workmaill@gmail.com](mailto:charan.workmaill@gmail.com)
