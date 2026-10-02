@@ -85,22 +85,12 @@ I am a **Systems Infrastructure & Software Development Engineer (SDE)** passiona
 
 ---
 
-## 📊 GitHub Analytics & Engineering Velocity
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<a href="https://github.com/Charanloyal">
-  <img height="185em" src="https://github-readme-stats.vercel.app/api?username=Charanloyal&show_icons=true&include_all_commits=true&count_private=true&hide_rank=true&theme=dark&bg_color=07090e&title_color=06b6d4&text_color=94a3b8&icon_color=10b981&border_color=1e293b" alt="Charan's GitHub Stats" />
-</a>
-<a href="https://github.com/Charanloyal">
-  <img height="185em" src="https://streak-stats.demolab.com/?user=Charanloyal&theme=dark&background=07090e&border=1e293b&stroke=10b981&ring=10b981&fire=10b981&currStreakLabel=06b6d4&dates=94a3b8" alt="GitHub Streak Stats" />
-</a>
-
-<br><br>
-
-<a href="https://github.com/Charanloyal">
-  <img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charanloyal&layout=compact&hide=Jupyter%20Notebook,HTML,CSS&theme=dark&bg_color=07090e&title_color=06b6d4&text_color=94a3b8&border_color=1e293b" alt="Top Languages" />
-</a>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Charanloyal&show_icons=true&hide_rank=true&hide=prs,issues&theme=dark&bg_color=07090e&title_color=06b6d4&text_color=94a3b8&icon_color=10b981&border_color=1e293b" alt="Charan's GitHub Stats" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charanloyal&layout=compact&hide=Jupyter%20Notebook,HTML,CSS&theme=dark&bg_color=07090e&title_color=06b6d4&text_color=94a3b8&border_color=1e293b" alt="Top Languages" />
 
 </div>
 
