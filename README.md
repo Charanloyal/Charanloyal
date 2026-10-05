@@ -7,7 +7,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/)
 [![GitHub Repositories](https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Charanloyal?tab=repositories)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charanloyal@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charan.workmaill@gmail.com)
 
 ---
 
@@ -19,7 +19,7 @@ I am a **Systems Infrastructure & Software Development Engineer (SDE)** passiona
 
 - ⚡ **Core Domain Focus**: Distributed Systems, Consensus Algorithms (Raft), Async Gateway Architecture, LLM Infrastructure.
 - 🛠️ **Engineering Principles**: Clean Code, ACID Durability, Zero-Mock Systems Testing, Automated CI/CD Pipelines.
-- 🎯 **Targeting Roles**: Software Development Engineer (SDE-I / SDE-II), Forward Deployed Engineer (FDE), AI Infrastructure Engineer.
+- 🎯 **Targeting Roles**: Software Development Engineer (SDE-I), Forward Deployed Engineer (FDE), AI Infrastructure Engineer.
 
 ---
 
