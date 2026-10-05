@@ -15,7 +15,7 @@
 
 ## 🚀 About Me
 
-I am a **Systems Infrastructure & Software Development Engineer (SDE)** passionate about building **distributed consensus engines**, **fault-tolerant microservices**, and **AI/LLM serving infrastructure**. My work focuses on low-latency data pipelines, zero-downtime failover systems, and high-throughput backend architecture targeting GCCs and Tier-1 Product Companies.
+I am a **Systems Infrastructure & Software Development Engineer (SDE)** passionate about building **distributed consensus engines**, **fault-tolerant microservices** and **AI/LLM serving infrastructure**. My work focuses on low-latency data pipelines, zero-downtime failover systems and high-throughput backend architecture targeting GCCs and Tier-1 Product Companies.
 
 - ⚡ **Core Domain Focus**: Distributed Systems, Consensus Algorithms (Raft), Async Gateway Architecture, LLM Infrastructure.
 - 🛠️ **Engineering Principles**: Clean Code, ACID Durability, Zero-Mock Systems Testing, Automated CI/CD Pipelines.
