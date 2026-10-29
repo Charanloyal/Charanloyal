@@ -1,116 +1,78 @@
-<div align="center">
+# Charan Kumar Reddy
 
-# Hi, I'm Charan Kumar Reddy👋
-### **Distributed Systems & AI Infrastructure Engineer | SDE / FDE / AI-Infra**
+Data, backend and ML engineering · B.Tech ECE (Data Science) at SRM Institute of Science and Technology, graduating May 2027 · AI/ML intern at General Motors, Bengaluru
 
-*Specializing in High-Throughput Microservices, Consensus Protocols, LLM Serving Gateways & Cloud Infrastructure*
+[Portfolio](https://personal-portfolio-hub-3z4y.onrender.com/) · [LinkedIn](https://www.linkedin.com/in/b-charan-kumar-reddy/) · [Email](mailto:charankumarreddy2028@gmail.com)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/)
-[![GitHub Repositories](https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Charanloyal?tab=repositories)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charan.workmaill@gmail.com)
+I build the parts of a system that decide whether its data and models can be trusted:
 
----
+- **Data pipelines** — change data capture into a lakehouse, idempotent writes, dead-letter handling, data contracts and quality gates.
+- **Backend services** — FastAPI services with rate limiting, caching, circuit breakers and streaming responses, packaged with Docker and tested in CI.
+- **ML and AI engineering** — models evaluated against honest baselines, RAG with verified citations and guardrails, and models exported for low-latency serving.
 
-</div>
+Each project below says how it was tested, what the numbers were measured on, and what it does not do yet. Projects built on synthetic or fictional data are labelled.
 
-## 🚀 About Me
+## Selected projects
 
-I am a **Systems Infrastructure & Software Development Engineer (SDE)** passionate about building **distributed consensus engines**, **fault-tolerant microservices** and **AI/LLM serving infrastructure**. My work focuses on low-latency data pipelines, zero-downtime failover systems and high-throughput backend architecture targeting GCCs and Tier-1 Product Companies.
+### [LakeFlow](https://github.com/Charanloyal/lakeflow) — CDC lakehouse
 
-- ⚡ **Core Domain Focus**: Distributed Systems, Consensus Algorithms (Raft), Async Gateway Architecture, LLM Infrastructure.
-- 🛠️ **Engineering Principles**: Clean Code, ACID Durability, Zero-Mock Systems Testing, Automated CI/CD Pipelines.
-- 🎯 **Targeting Roles**: Software Development Engineer (SDE-I), Forward Deployed Engineer (FDE), AI Infrastructure Engineer.
+PostgreSQL → Debezium → Kafka → Spark Structured Streaming → Apache Iceberg (MinIO) → Trino, with a FastAPI and Next.js control plane.
 
----
+Change events arrive at least once and sometimes out of order; LakeFlow applies them with LSN-guarded idempotent `MERGE`s and routes malformed records to a dead-letter queue.
 
-## 🛠 Tech Stack & Core Competencies
+An integration test crashes the job between the Iceberg commit and the Kafka offset commit and checks that the replay writes no duplicate rows. Single-node setup; no throughput benchmarks published yet.
 
-<div align="center">
+[Code](https://github.com/Charanloyal/lakeflow) · [Recorded demo of a CI run](https://charanloyal.github.io/lakeflow/)
 
-### **Languages & Core Systems**
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-17/20-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-SQLite/Postgres-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Linux/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+### [Vehicle Telemetry Anomaly Detection](https://github.com/Charanloyal/Real-Time-Vehicle-Telemetry-Anomaly-Detection-Edge-ML-Optimization) — streaming ML · synthetic data
 
-### **Distributed Systems & Microservices**
-![gRPC](https://img.shields.io/badge/gRPC-Protobuf-244c5a?style=for-the-badge&logo=grpc&logoColor=white)
-![Raft Consensus](https://img.shields.io/badge/Raft_Consensus-Algorithm-FF6F00?style=for-the-badge)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Redis Lua](https://img.shields.io/badge/Redis-Lua_Token_Bucket-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-Async_Audit-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+Point and per-vehicle window models (scikit-learn, XGBoost), ONNX export, pandas or PySpark micro-batch streaming with state carried across batches, and a FastAPI service.
 
-### **AI Infrastructure & Observability**
-![Sentence Transformers](https://img.shields.io/badge/Sentence_Transformers-Cosine_Similarity-FF6F00?style=for-the-badge)
-![Circuit Breaker](https://img.shields.io/badge/3--State_Circuit_Breaker-EWMA_Routing-8B5CF6?style=for-the-badge)
-![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+Slow sensor drifts stay inside the fleet's normal range, so the window model compares each vehicle with its own history: F1 0.962 on the synthetic test split. ONNX Runtime scores one event in 0.042 ms (p50, laptop CPU). Streaming reads files; the Kafka source is not implemented.
 
-</div>
+[Code](https://github.com/Charanloyal/Real-Time-Vehicle-Telemetry-Anomaly-Detection-Edge-ML-Optimization) · [Live demo](https://vehicle-telemetry-anomaly-detection.onrender.com/)
 
----
+### [DriveDocs AI](https://github.com/Charanloyal/drivedocs) — multimodal RAG · fictional manual
 
-## 🌟 Flagship Systems & Engineering Projects
+LangChain tool-calling agent over MiniLM text and CLIP image embeddings in FAISS, with file-and-page citations that are checked before an answer is returned, plus prompt-injection and PII guardrails.
 
-### 1. ⚙️ [RaftKV — Distributed Consistent Key-Value Store](https://github.com/Charanloyal/raftkv)
-> *Production-grade, strongly consistent distributed key-value store in Python 3.11 using Raft Consensus over gRPC.*
+Passes 39/39 QA and 23/23 security cases on evaluation sets written alongside the fictional corpus (in-sample; indicative only). The public demo uses an offline planner and does not call an LLM.
 
-- **Raft Consensus Protocol**: Strictly compliant Raft state machine (Follower, Candidate, Leader), $lastLogTerm$/$lastLogIndex$ log up-to-date validation, and commit index progression.
-- **ACID Write-Ahead Logging (WAL)**: SQLite-backed WAL engine (`wal.sqlite`) storing `currentTerm`, `votedFor`, log entries, and atomic snapshot compaction metadata.
-- **Smart Client Driver**: Automatic leader discovery, client sequence deduplication, and exponential backoff retry logic.
-- **Chaos Testing Harness**: 5-node isolated Docker bridge cluster test asserting leader failover and election convergence in **<1.0s**.
+[Code](https://github.com/Charanloyal/drivedocs) · [Live demo](https://drivedocs-3xr4.onrender.com)
 
----
+### [TicketLens](https://github.com/Charanloyal/ticketlens) — text classification and serving
 
-### 2. ⚡ [NeuralGateway — Distributed Multi-Tenant LLM Gateway](https://github.com/Charanloyal/neural-gateway)
-> *High-throughput LLM serving broker with Redis Lua token bucket rate limiting, semantic vector caching, and EWMA routing.*
+Compares TF-IDF + Logistic Regression, a Keras CNN and DistilBERT + LoRA on one held-out set of 3,563 IT tickets. TF-IDF + LR scored the best macro-F1 (0.835 vs 0.779 for DistilBERT + LoRA), so it is the model served by FastAPI, with PII scrubbing and confidence-gated routing of uncertain tickets to human review.
 
-- **Atomic Token Bucket Rate Limiting**: Single-roundtrip Redis Lua script eliminating race conditions across gateway replicas with dynamic `Retry-After` headers.
-- **Semantic Vector Caching**: L2-normalized dense vector embeddings (`sentence-transformers/all-MiniLM-L6-v2`) with cosine similarity search returning cached SSE completions in **<2ms at $0.00 LLM cost**.
-- **EWMA Latency-Weighted Routing & Circuit Breaker**: Exponentially Weighted Moving Average routing with 3-state circuit breakers (`CLOSED` $\rightarrow$ `OPEN` $\rightarrow$ `HALF_OPEN`) for zero-downtime provider failovers.
-- **Production Observability**: Prometheus `/metrics` endpoint, non-blocking Kafka audit producer, and interactive Web Control Plane dashboard live on [Render](https://neural-gateway-core.onrender.com/).
+[Code](https://github.com/Charanloyal/ticketlens) · [Live demo](https://ticketlens.onrender.com/)
 
----
+### [FeatureHub + DataGuard](https://github.com/Charanloyal/featurehub-dataguard) — feature store and data reliability · synthetic data
 
-### 3. 🛡️ [Campaign QA Validator — Email Pre-Deployment Checker](https://github.com/Charanloyal/campaign-qa-validator)
-> *Production-grade automated pre-send QA validation suite and SQL suppression anti-join auditor.*
+Data contracts, schema diffing and Great Expectations gates run before features are written to Redis; point-in-time joins build training sets, and a failed gate emits an OpenLineage event and files an incident instead of publishing.
 
-- **Multi-Syntax Unrendered Token Detection**: Automated scanning for unresolved merge tags across 6 ESP standards (Jinja2, Liquid, SFMC AMPscript, Mailchimp, Marketo, Klaviyo, SendGrid) preventing broken subscriber inboxes.
-- **Link Security & Staging Leak Gating**: Zero-tolerance blocker detection of non-routable hosts (`localhost`, `127.0.0.1`, `staging.internal`), wireframe dummy links (`#`), and unencrypted HTTP endpoints.
-- **Attribution & UTM Taxonomy Engine**: Enforces exact UTM query parameters against campaign spec taxonomies and blocks forbidden PII query parameters (`email`, `ssn`, `token`) to ensure regulatory compliance.
-- **Relational SQL Suppression Anti-Joins**: In-memory relational auditor validating target audience cohorts against Global Unsubscribes (CAN-SPAM), GDPR Article 17 Erasure Requests, Hard-Bounces, Competitors, and Frequency Fatigue Caps.
-- **Interactive Control Plane & Defect Logger**: Single-page workbench with sandboxed visual email rendering, live defect highlight mode, and auto-generated defect tickets with line numbers and reproduction steps.
+Redis online lookup: 0.77 ms p50 / 1.62 ms p99 (one laptop, loopback, single client).
 
----
+[Code](https://github.com/Charanloyal/featurehub-dataguard)
 
-## 📈 Quantifiable Engineering Impact & Benchmarks
+### [NeuralGateway](https://github.com/Charanloyal/neural-gateway) — LLM gateway prototype
 
-| Project / Component | Key Metric | Engineering Benchmark | Business / Technical Value |
-| :--- | :--- | :--- | :--- |
-| **RaftKV Cluster Failover** | Sub-Second Convergence | **< 1.0s Leader Re-election** | Zero data loss during hard node failures |
-| **RaftKV Throughput** | QPS Operations | **~1,785 GET ops/sec** | High-throughput distributed read performance |
-| **Campaign QA Audit Speed** | Full Payload Scan Time | **< 0.64s for Full Test Suite** | Immediate CI/CD deployment gating |
-| **Campaign Suppression Anti-Join** | Suppression Leakage Rate | **0% Tolerance (Zero Leaks)** | 100% CAN-SPAM / GDPR Article 17 compliance |
-| **NeuralGateway Cache** | Cache Replay Latency | **< 2.0ms Response Time** | Eliminates 100% of LLM token cost on hit |
-| **NeuralGateway Limiter** | Atomic Lua Execution | **Single Roundtrip Redis Script** | Zero race conditions across distributed workers |
+FastAPI gateway with a Redis Lua token-bucket rate limiter, a response cache, EWMA latency routing, circuit breakers, SSE streaming and Kafka audit events. LLM providers are mocked by default; no load benchmarks yet.
 
----
+[Code](https://github.com/Charanloyal/neural-gateway)
 
-## 📊 GitHub Analytics
+More projects, including experiments and learning projects, are on the [portfolio](https://personal-portfolio-hub-3z4y.onrender.com/#all-projects). The demos run on free hosting, so the first request can take a minute while the service wakes up.
 
-<div align="center">
+## Tools I use
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Charanloyal&show_icons=true&hide_rank=true&hide=prs,issues&theme=dark&bg_color=07090e&title_color=06b6d4&text_color=94a3b8&icon_color=10b981&border_color=1e293b" alt="Charan's GitHub Stats" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charanloyal&layout=compact&hide=Jupyter%20Notebook,HTML,CSS&theme=dark&bg_color=07090e&title_color=06b6d4&text_color=94a3b8&border_color=1e293b" alt="Top Languages" />
+- **Languages:** Python, SQL, TypeScript / JavaScript
+- **Data:** PostgreSQL, Debezium, Apache Kafka, Spark Structured Streaming / PySpark, Apache Iceberg, Trino, Apache Airflow, Great Expectations, Redis
+- **Backend:** FastAPI, gRPC, Celery, Docker Compose, GitHub Actions, Prometheus
+- **ML and AI:** scikit-learn, XGBoost, PyTorch, Hugging Face Transformers + PEFT (LoRA), TensorFlow / Keras, ONNX Runtime, SHAP, LangChain, LangGraph, FAISS, Qdrant
 
-</div>
+## Contact
 
----
+Open to internships and early-career roles in data engineering, backend engineering and ML / AI engineering.
 
-## 📬 Connect With Me
-
-- 💼 **LinkedIn**: [Connect on LinkedIn](https://linkedin.com/in/b-charan-kumar-reddy)
-- 💻 **GitHub**: [github.com/Charanloyal](https://github.com/Charanloyal)
-- 📧 **Email**: [charan.workmaill@gmail.com](mailto:charan.workmaill@gmail.com)
+- Email: [charankumarreddy2028@gmail.com](mailto:charankumarreddy2028@gmail.com)
+- LinkedIn: [linkedin.com/in/b-charan-kumar-reddy](https://www.linkedin.com/in/b-charan-kumar-reddy/)
+- Portfolio: [personal-portfolio-hub-3z4y.onrender.com](https://personal-portfolio-hub-3z4y.onrender.com/)
